@@ -1,0 +1,55 @@
+%%%%%%%%% SAGAR BHATT - READING LOG HEADER %%%%%%%%%%%%%%%%%%%
+%% @author:  Sagar BHatt                                    %%
+%% @contact: sagar.bhatt0904@gmail.com                      %%
+%% @revised: 12 / December / 2018                           %%
+%%                                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{readinLog}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[bookmarks=true,bookmarksnumbered=true,hidelinks]{hyperref}
+\usepackage{listings}
+%%%%%%%%%%%%%%%%%CODE COLORS%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color} 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82} 
+\lstdefinestyle{mystyle}{
+ backgroundcolor=\color{white}, 
+ commentstyle=\color{codegreen},
+ keywordstyle=\color{blue},
+ numberstyle=\tiny\color{codegray},
+ stringstyle=\color{codepurple},
+ basicstyle=\footnotesize,
+ breakatwhitespace=false, 
+ breaklines=true, 
+ captionpos=b, 
+ keepspaces=true, 
+ numbers=left, 
+ numbersep=5pt, 
+ showspaces=false, 
+ showstringspaces=false,
+ showtabs=false, 
+ tabsize=2
+} 
+\lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hmarginratio=1:1,top=35mm,left=25mm, right=25mm, columnsep=20pt]{geometry}
+\usepackage{float}
+\setcounter{secnumdepth}{4}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+%%%%%%%%%%% HEADER / FOOTER %%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\date{}}
+\chead{\textsc{Reading Log}}
+\lhead{\textsc{Sagar Bhatt}}
+\rfoot{\textsc{\thepage}}
+\cfoot{\textit{Last modified: \today}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{}
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{}
